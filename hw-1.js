@@ -27,6 +27,7 @@
     let num_5_1 = 2;
     let result_5_1 = num_5_1**5;
     alert(result_5_1);
+    214
 
 // Задание 6
 
