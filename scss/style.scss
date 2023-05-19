@@ -13,8 +13,7 @@ a {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding: 0 120px;
 }
 
 .header {
@@ -34,7 +33,7 @@ a {
         color: #FFFFFF;
     }
 
-    &__subtitle {
+    &__text {
         padding-bottom: 44px;
         font-style: normal;
         width: 481px;
@@ -46,9 +45,15 @@ a {
 
     &__link-get {
         color: #FFFFFF;
-        &:hover { 
-            color: #9C0332; 
+
+        &:hover {
+            color: #9C0332;
         }
+    }
+
+    &__link-box {
+        position: relative;
+        width: fit-content;
     }
 
     &__link {
@@ -69,10 +74,20 @@ a {
         transition: all 0.4s;
 
         &:hover {
-        background: #FFFFFF;  
-        color: #9C0332; 
+            background: #EB443F;
         }
     }
+
+    &__pointer {
+        display: none;
+        position: absolute;
+        top: 37px;
+        left: 192.5px;
+    }
+}
+
+.header__link-box:hover .header__pointer {
+    display: block;
 }
 
 .main {
@@ -86,13 +101,14 @@ a {
 }
 
 .game {
+    position: relative;
     width: 378px;
     min-height: 300px;
     display: flex;
     align-items: flex-end;
     padding: 32px;
     border-radius: 16px;
-    background-size: cover;
+    background-size: initial;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -108,17 +124,58 @@ a {
         background-image: url(../img/game-3.jpg);
     }
 
-    &__link {
-        font-style: normal;
+    &__text {
         font-weight: 600;
         font-size: 24px;
         line-height: 32px;
         color: #FFFFFF;
         transition: all 0.4s;
+    }
 
-        &:hover {
-            color: #9C0332;;
+    &:hover {
+        border: 3px solid #44D2FF;
+    }
+}
+
+.game:hover .pointer {
+    display: block
+}
+
+.pointer {
+    display: none;
+    position: absolute;
+    top: 252px;
+    left: 300px;
+}
+
+@media (max-width: 425px) {
+    .center {
+        padding: 0 16px;
+    }
+
+    .header {
+        min-height: 725px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            width: 343px;
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 
+    .main {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2-nd course hw</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"rel="stylesheet">
@@ -14,22 +14,28 @@
 
 <body>
     <header class="header center">
-        <h1 class="title header__title">Добро пожаловать <br> на мой сайт !</h1>
-        <h2 class="subtitle header__subtitle">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <a class="link-get header__link-get" href="#"><b>поехали</b></a>  и <a class="link-get header__link-get" href="#"><b>приступай</b></a></h2>
-        <a class="link header__link" href="#">Поехали!</a>
+        <h1 class="header__title">Добро пожаловать <br> на мой сайт !</h1>
+        <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <a class="link-get header__link-get" href="#"><b>поехали</b></a>  и <a class="link-get header__link-get" href="#"><b>приступай</b></a></p>
+        <div class="header__link-box">
+             <a class="header__link" href="#">Поехали!</a>
+             <span class="header__pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+        </div>
     </header>
     <main class="main center">
-        <div class="game game_1">
-            <a class="link game__link" href="#">Игра 1</a>
-        </div>
-        <div class="game game_2">
-            <a class="link game__link" href="#">Игра 2</a>
-        </div>
-        <div class="game game_3">
-            <a class="link game__link" href="#">Игра 3</a>
-        </div>
+        <a class="game game_1" href="#">
+            <p class="game__text">Игра 1</p>
+            <span class="pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+        </a>
+        <a class="game game_2" href="#">
+            <p class="game__text">Игра 2</p>
+            <span class="pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+        </a>
+        <a class="game game_3" href="#">
+            <p class="game__text">Игра 3</p>
+            <span class="pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+        </a>
     </main>
-    <script src="hw-2.js"></script>
+    <script src="hw-3.js"></script>
 </body>
 
 </html>
