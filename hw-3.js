@@ -33,38 +33,25 @@
 
 // switch (month) {
 //     case 12:
-//         console.log('зима');
-//         break;
 //     case 1:
-//         console.log('зима');
-//         break;
 //     case 2:
 //         console.log('зима');
 //         break;
+
 //     case 3:
-//         console.log('весна');
-//         break;
 //     case 4:
-//         console.log('весна');
-//         break;
 //     case 5:
 //         console.log('весна');
 //         break;
+
 //     case 6:
-//         console.log('лето');
-//         break;
 //     case 7:
-//         console.log('лето');
-//         break;
 //     case 8:
 //         console.log('лето');
 //         break;
+
 //     case 9:
-//         console.log('осень');
-//         break;
 //     case 10:
-//         console.log('осень');
-//         break;
 //     case 11:
 //         console.log('осень');
 //         break;
@@ -77,11 +64,11 @@
 // Задание 7
 // let f = Number(prompt('Пожалуйста, введите любое число'));
 
-// if (f%2===0) {
+// if (isNaN(f)) {
+//     alert('Нужно вписать число');
+// } else if (f % 2 === 0) {
 //     alert('Число четное');
-// } else if (f%2===1) {
-//     alert('Число нечетное');
-// } else { alert('Нужно вписать число');};
+// } else alert('Число нечетное');
 
 
 // Задание 8
