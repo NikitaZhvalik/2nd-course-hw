@@ -43,13 +43,11 @@
 //     case 5:
 //         console.log('весна');
 //         break;
-
 //     case 6:
 //     case 7:
 //     case 8:
 //         console.log('лето');
 //         break;
-
 //     case 9:
 //     case 10:
 //     case 11:
