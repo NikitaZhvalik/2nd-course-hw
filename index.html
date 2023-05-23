@@ -17,25 +17,39 @@
         <h1 class="header__title">Добро пожаловать <br> на мой сайт !</h1>
         <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <a class="link-get header__link-get" href="#"><b>поехали</b></a>  и <a class="link-get header__link-get" href="#"><b>приступай</b></a></p>
         <div class="header__link-box">
-             <a class="header__link" href="#">Поехали!</a>
+             <a class="link header__link" href="#">Поехали!</a>
              <span class="header__pointer"><img src="./img/pointer.svg" alt="pointer"></span>
         </div>
     </header>
     <main class="main center">
         <a class="game game_1" href="#">
             <p class="game__text">Игра 1</p>
-            <span class="pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+            <span class="game__pointer"><img src="./img/pointer.svg" alt="pointer"></span>
         </a>
         <a class="game game_2" href="#">
             <p class="game__text">Игра 2</p>
-            <span class="pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+            <span class="game__pointer"><img src="./img/pointer.svg" alt="pointer"></span>
         </a>
         <a class="game game_3" href="#">
             <p class="game__text">Игра 3</p>
-            <span class="pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+            <span class="game__pointer"><img src="./img/pointer.svg" alt="pointer"></span>
         </a>
     </main>
-    <script src="hw-3.js"></script>
+    <section class="seasons center">
+        <div class="seasons__left">
+            <h2 class="subtitle seasons__sibtitle">Времена года!</h2>
+            <p class="text seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <div class="seasons__link-box">
+                <a onclick="gameSeason();" class="link seasons__link" href="#">Поехали!</a>
+                <span class="seasons__pointer"><img src="./img/pointer.svg" alt="pointer"></span>
+           </div>
+        </div>
+        <div class="seasons__right">
+            <img class="seasons__img seasons__img_big" src="./img/game-1.svg" alt="game 1">   
+            <img class="seasons__img seasons__img_small" src="./img/game-1_small.svg" alt="">         
+        </div>
+    </section>
+    <script src="hw-5.js"></script>
 </body>
 
 </html>

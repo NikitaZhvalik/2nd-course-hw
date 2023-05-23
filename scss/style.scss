@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #000915;
 }
 
 a {
@@ -14,6 +15,44 @@ a {
 
 .center {
     padding: 0 120px;
+}
+
+.subtitle {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.text {
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.link {
+    padding: 0 74px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    min-height: 48.5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #9C0332;
+    border-radius: 30px;
+    transition: all 0.4s;
+
+    &:hover {
+        background: #EB443F;
+    }
 }
 
 .header {
@@ -56,28 +95,6 @@ a {
         width: fit-content;
     }
 
-    &__link {
-        padding: 0 74px;
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 234px;
-        min-height: 48.5px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-        background: #9C0332;
-        border-radius: 30px;
-        transition: all 0.4s;
-
-        &:hover {
-            background: #EB443F;
-        }
-    }
-
     &__pointer {
         display: none;
         position: absolute;
@@ -93,7 +110,6 @@ a {
 .main {
     padding-top: 128px;
     padding-bottom: 128px;
-    background: #000915;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -135,17 +151,60 @@ a {
     &:hover {
         border: 3px solid #44D2FF;
     }
+
+    &__pointer {
+        display: none;
+        position: absolute;
+        top: 252px;
+        left: 300px;
+    }
 }
 
-.game:hover .pointer {
+.game:hover .game__pointer {
     display: block
 }
 
-.pointer {
-    display: none;
-    position: absolute;
-    top: 252px;
-    left: 300px;
+.seasons {
+    min-height: 800px;
+    display: flex;
+    row-gap: 64px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__left {
+        width: 584px;
+    }
+
+    &__link-box {
+        position: relative;
+        width: fit-content;
+    }
+
+    &__pointer {
+        display: none;
+        position: absolute;
+        top: 37px;
+        left: 192.5px;
+    }
+
+    &__img_small {
+        display: none;
+    }
+}
+
+.seasons__link-box:hover .seasons__pointer {
+    display: block;
+}
+
+@media (max-width: 901px) {
+    .seasons__img_big {
+        display: none;
+    }
+
+    .seasons__img_small {
+        display: block;
+    }
 }
 
 @media (max-width: 425px) {
@@ -177,5 +236,21 @@ a {
     .main {
         padding-top: 128px;
         padding-bottom: 128px;
+        
+    }
+
+    .seasons {
+        padding-top: 52px;
+        padding-bottom: 84px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
 }

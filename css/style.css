@@ -7,6 +7,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #000915;
 }
 
 a {
@@ -15,6 +16,50 @@ a {
 
 .center {
   padding: 0 120px;
+}
+
+.subtitle {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+
+.text {
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.link {
+  padding: 0 74px;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 234px;
+  min-height: 48.5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #9C0332;
+  border-radius: 30px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.link:hover {
+  background: #EB443F;
 }
 
 .header {
@@ -54,33 +99,6 @@ a {
   width: -moz-fit-content;
   width: fit-content;
 }
-.header__link {
-  padding: 0 74px;
-  display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 234px;
-  min-height: 48.5px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #FFFFFF;
-  background: #9C0332;
-  border-radius: 30px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.header__link:hover {
-  background: #EB443F;
-}
 .header__pointer {
   display: none;
   position: absolute;
@@ -95,7 +113,6 @@ a {
 .main {
   padding-top: 128px;
   padding-bottom: 128px;
-  background: #000915;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,18 +160,63 @@ a {
 .game:hover {
   border: 3px solid #44D2FF;
 }
-
-.game:hover .pointer {
-  display: block;
-}
-
-.pointer {
+.game__pointer {
   display: none;
   position: absolute;
   top: 252px;
   left: 300px;
 }
 
+.game:hover .game__pointer {
+  display: block;
+}
+
+.seasons {
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 64px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.seasons__left {
+  width: 584px;
+}
+.seasons__link-box {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.seasons__pointer {
+  display: none;
+  position: absolute;
+  top: 37px;
+  left: 192.5px;
+}
+.seasons__img_small {
+  display: none;
+}
+
+.seasons__link-box:hover .seasons__pointer {
+  display: block;
+}
+
+@media (max-width: 901px) {
+  .seasons__img_big {
+    display: none;
+  }
+  .seasons__img_small {
+    display: block;
+  }
+}
 @media (max-width: 425px) {
   .center {
     padding: 0 16px;
@@ -189,5 +251,31 @@ a {
   .main {
     padding-top: 128px;
     padding-bottom: 128px;
+  }
+  .seasons {
+    padding-top: 52px;
+    padding-bottom: 84px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .seasons__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
 }
