@@ -116,32 +116,38 @@
 
 
 // Задание 8 --- gameSeason
-function gameSeason() {
-    let month = Number(prompt('Введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится'));
-    switch (month) {
-        case 12:
-        case 1:
-        case 2:
-            alert('зима');
-            break;
-        case 3:
-        case 4:
-        case 5:
-            alert('весна');
-            break;
-        case 6:
-        case 7:
-        case 8:
-            alert('лето');
-            break;
-        case 9:
-        case 10:
-        case 11:
-            alert('осень');
-            break;
+// function gameSeason() {
+//     let month = Number(prompt('Введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится'));
+//     switch (month) {
+//         case 12:
+//         case 1:
+//         case 2:
+//             alert('зима');
+//             break;
+//         case 3:
+//         case 4:
+//         case 5:
+//             alert('весна');
+//             break;
+//         case 6:
+//         case 7:
+//         case 8:
+//             alert('лето');
+//             break;
+//         case 9:
+//         case 10:
+//         case 11:
+//             alert('осень');
+//             break;
 
-        default:
-            alert('Такого месяца не существует');
-            break;
-    }
-}
+//         default:
+//             alert('Такого месяца не существует');
+//             break;
+//     }
+// }
+
+const numbs = [2, 4, 5, 6, 8];
+
+numbs.forEach((xxx, index, arr) => {
+	console.log(`${index}: ${xxx}, массив: ${arr}`);
+});
