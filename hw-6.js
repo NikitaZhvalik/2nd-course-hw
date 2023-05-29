@@ -1,121 +1,4 @@
-// Задание 1
-// const min = (a, b) => {
-//     if (a > b && a !== null && b !== null) {
-//         return b;
-//     }
-//     else if (a < b && a !== null && b !== null) {
-//         return a;
-//     }
-//     else if (a === b a !== null && b !== null) {
-//         return a;
-//     }
-//     else {
-//         return ('Вы ввели что-то не то');
-//     }
-// }
-
-// console.log(min(41, 741));
-
-// Задание 2
-// let evenOdd = (a) => {
-//     if (a % 2 === 0) {
-//         alert ('Это число четное');
-//     }
-//     else if (a % 2 === 1 || a % 2 === -1) {
-//         alert ('Это число нечетное');
-//     }
-//     else {
-//         alert ('Вы ввели что-то не то');
-//     }
-// }
-
-// console.log(evenOdd(11));
-
-// Задание 3
-// function square1(a) {
-//     console.log(a**2);
-// };
-
-// let square2 = (b) => b**2;
-
-// console.log(square1(2));
-// console.log(square2(10));
-
-// Задание 4
-// let userAge = () => {
-//     let age = Number(prompt(`Сколько вам лет?`));
-//     if (age >= 0 && age <= 12 && age) {
-//         alert(`Привет, друг!`); 
-//     } else if (age > 12) {
-//         alert(`Добро пожаловать!`);  
-//     } else if (age < 0) {
-//         alert(`Вы ввели неправильное значение`);
-//     } else {
-//         alert ('Вы ввели что-то не то');
-//     }
-// }
-
-// console.log(userAge());
-
-// Задание 5
-// const exam = () => {
-//     let a = Number(prompt('Введите число'));
-//     let b = Number(prompt('Введите число'));
-//     if (isNaN(`${a}`) || isNaN(`${b}`)) {
-//         alert('Одно или оба значения не являются числом')
-//     } else {
-//         alert(`${a}` * (`${b}`));
-//     }
-// }
-
-// console.log(exam());
-
-// Задание 6
-// const exam = () => {
-//     let a = Number(prompt('Введите число'));
-//     let result = `${a}`*`${a}`;
-//     if (isNaN(`${a}`)) {
-//         alert('Переданный параметр не является числом');
-//     } else {
-//         alert(`${a} в кубе равняется ${result}`);
-//     }
-// }
-
-// console.log(exam());
-
-// // Задание 7
-// function area() {
-//     return 3.14 * this.radius *  this.radius;
-// }
-
-// function perimeter() {
-//     return this.radius * 2 * 3.14;
-// }
-
-// let circle1 = {
-//     radius: 14,
-
-//     getArea: area,
-//     getPerimeter: perimeter
-// };
-
-// let circle2 = {
-//     radius: 7,
-
-//     getArea: area,
-//     getPerimeter: perimeter
-// };
-
-// console.log(`Площадь 1-го круга равна ${circle1.getArea()}`);
-// console.log(`Периметр 1-го круга равен ${circle1.getPerimeter()}`);
-
-// console.log(`Площадь 2-го круга равна ${circle2.getArea()}`);
-// console.log(`Периметр 2-го круга равен ${circle2.getPerimeter()}`);
-
-
-
-
-// Задание 8 --- gameSeason
+//! gameSeason
 // function gameSeason() {
 //     let month = Number(prompt('Введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится'));
 //     switch (month) {
@@ -146,8 +29,113 @@
 //     }
 // }
 
-const numbs = [2, 4, 5, 6, 8];
+// Задание 1
+// const num = [1, 5, 4, 10, 0, 3];
+// for (i = 0; i < num.length; i++) {
+//   if (num[i] === 10) break;
+//     console.log('we find 10');
+// }
 
-numbs.forEach((xxx, index, arr) => {
-	console.log(`${index}: ${xxx}, массив: ${arr}`);
-});
+// Задание 2
+// const num = [1, 5, 4, 10, 0, 3, 4 , 1 , 4];
+// for (i = 0, index = 0; i < num.length, index < num.length; i++, index++) {
+//   if (num[i] === 4) {
+//     console.log(`${num[i]} - index ${index}`);
+//   }
+// }
+
+// Задание 3
+// const num = [1, 3, 5, 10, 20];
+// const result = num.join(' ');
+// console.log(result);
+
+// Задание 4
+// const result = [];
+// for (let i = 0; i < 3; i++) {
+// 	result[i] = [];
+// 	for (let n = 0; n < 3; n++) {
+// 		result[i][n] = 1;
+// 	}
+// }
+// console.log(result);
+
+// Задание 5
+// const num = [1, 1, 1];
+// num.push(2,2,2);
+// console.log(num);
+
+// Задание 6
+
+// 1 вариант
+// const num = [9, 8, 7, 'a', 6, 5];
+// num.sort();
+// num.pop();
+// console.log(num);
+
+// 2 вариант
+// const num = [9, 8, 7, 'a', 6, 5];
+// num.sort();
+// num.splice(5);
+// console.log(num);
+
+//? Задание 7
+// const num = [9, 8, 7, 6, 5];
+// let userNumber = Number(prompt('введите число от 1 до 10'));
+
+// for (let i = 0; i < num.length; i++) {
+// 	if (userNumber >= 1 && userNumber <= 10 && num[i] === userNumber) {
+// 		alert(`у нас в массиве есть число ${num[i]}`);
+// 		break;
+// 	} else {
+// 		alert('вы ввели что-то не то');
+// 		continue;
+// 	}
+// }
+
+// Задание 8
+// let word = 'abcdef';
+// word = word.split('');
+// word = word.reverse();
+// const newWord = word.join('');
+// console.log(newWord);
+
+// Задание 9
+// const num = [[1, 2, 3,],[4, 5, 6]];
+// const result= num.reduce(function(a, b) {
+// 	return a.concat(b);
+// });
+// console.log(result);
+
+// Задание 10
+// const num = [5, 3, 8, -7, 11];
+// let result = 0;
+
+// for (let i = 0; i < num.length; i++) {
+// 	result += num[i];
+// 	console.log(result);
+// }
+
+// Задание 11
+// function Numbers(num) {
+// 	let result = num.map(item => `${item ** 2}`);
+// 	console.log(result);
+// }
+
+// Numbers([-1, 0, 5, -10, 18]);
+
+// Задание 12
+// function getLengthWords(array) {
+// 	const result = array.map((str) => str.length);
+// 	console.log(result);
+// }
+
+// getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']);
+
+//Задание 13
+// function filterPositive(array) {
+//   const result = array.filter(item => item >= 0);
+//   console.log(result);
+// }
+
+// filterPositive([-1, 0, 5, -10, 56]);
+// filterPositive([-25, 25, 0, -1000, -2]);
