@@ -52,8 +52,6 @@
 // searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
 // searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
 
-
-
 // Задание 3
 // let number = 32.58884;
 // console.log(Math.floor(number));
@@ -128,8 +126,20 @@
 // console.log(fullDate)
 
 //? Задание 11
-// let Randomfructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-// Randomfructs = Randomfructs.sort(() => Math.random() - 0.5);
+// let randomFructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+// randomFructs = randomFructs.sort(() => Math.random() - 0.5);
 
+// alert(randomFructs);
+// let userAnswer1 = prompt(`Чему равнялся первый элемент массива?`);
+// let userAnswer2 = prompt(`Чему равнялся последний элемент массива?`);
 
-// console.log(Randomfructs);
+// for (let i = 0; i < randomFructs.length; i++) {
+//     if (userAnswer1('randomFructs[0]') === randomFructs[0] && userAnswer2 === randomFructs[randomFructs.length - 1]) {
+//         console.log(`Вы угадали оба элемента`);
+//     } else if (userAnswer1 === randomFructs[0] || userAnswer2 === randomFructs[randomFructs.length - 1]) {
+//         console.log(`Вы были близки к победе!`);
+//     }
+//       else {
+//         console.log(`Вы не угадали ни один из элементов :(`);
+//     }
+// }
