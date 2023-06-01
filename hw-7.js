@@ -37,18 +37,22 @@
 // js = js.toUpperCase();
 // console.log(js);
 
-//? Задание 2
+// Задание 2
 // function searchStart(array, filter) {
-//     array.forEach(element => {
-//         if (element.toLowerCase().includes(filter.toLowerCase())) {
-//             console.log(element);
-//         }
-//     });
-// }
+//         let result = [];
+//         array.forEach((word) => {
+//             if (word.toLowerCase().includes(filter.toLowerCase())) {
+//                 result.push(word);
+//             }
+//         });
+//         console.log(result);
+// };  
 
-// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
-// searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
-// searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+// searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
+// searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+// searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино');
+
+
 
 // Задание 3
 // let number = 32.58884;
@@ -71,27 +75,16 @@
 // }
 // console.log(randomNumber(1, 10));
 
-//? Задание 6
-// Напишите функцию, которая будет принимать на вход целое число, а 
-// возвращать массив случайных целых чисел от 0 до переданного числа. 
-// Длина массива должна быть в 2 раза меньше переданного числа.
-
+// Задание 6
 // function getRandomArrNumbers(number) {
-//     if (number % 1 === 0 && number >= 0) {
-//         return Math.round(Math.random() * number);
-//         const result = [number];
+//     let result = [];
+//     for (let newMassive = 0; newMassive < Math.floor(number / 2); newMassive++) {
+//         result.push((Math.round(Math.random() * number)));
 //     }
-//     else {console.log('Вы ввели что-то не то или дробное число!');}
+//     return result;
 // }
 
-
-
-
-// console.log(getRandomArrNumbers(7));; // [6, 2, 7] - массив заполнен случайными числами
-// от 0 до 7, длина массива 7 / 2 = 3.5, округляем до ближайшего меньшего
-// числа, получаем 3
-// getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен случайными числами
-// от 0 до 12, длина массива 12 / 2 = 6
+// console.log(getRandomArrNumbers(10));
 
 // Задание 7
 // function randomNumber(minValue, maxValue) {
@@ -119,17 +112,20 @@
 
 // console.log(fullDate);
 
-//? Задание 10
+// Задание 10
 // const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 
 // const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 // "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
 // let myDate = new Date();
-// let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] +
-// " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
+// let fullDate = "Дата: " + myDate.getDate() +
+// " " + months[myDate.getMonth()] +
+// " " + myDate.getFullYear() +
+// " - это " + days[myDate.getDay()] + "." +
+// " Время: " + myDate.getHours() + " : " + myDate.getMinutes() + " : " + myDate.getSeconds(); 
 
-// console.log(new Date());
+// console.log(fullDate)
 
 //? Задание 11
 // let Randomfructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
