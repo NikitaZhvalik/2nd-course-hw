@@ -134,7 +134,7 @@
 // let userAnswer2 = prompt(`Чему равнялся последний элемент массива?`);
 
 // for (let i = 0; i < randomFructs.length; i++) {
-//     if (userAnswer1('randomFructs[0]') === randomFructs[0] && userAnswer2 === randomFructs[randomFructs.length - 1]) {
+//     if (userAnswer1 === randomFructs[0] && userAnswer2 === randomFructs[randomFructs.length - 1]) {
 //         console.log(`Вы угадали оба элемента`);
 //     } else if (userAnswer1 === randomFructs[0] || userAnswer2 === randomFructs[randomFructs.length - 1]) {
 //         console.log(`Вы были близки к победе!`);
