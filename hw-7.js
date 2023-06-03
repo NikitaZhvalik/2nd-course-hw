@@ -1,36 +1,56 @@
 //! gameSeason
-// function gameSeason() {
-//     let month = Number(prompt('Введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится'));
-//     switch (month) {
-//         case 12:
-//         case 1:
-//         case 2:
-//             alert('зима');
-//             break;
-//         case 3:
-//         case 4:
-//         case 5:
-//             alert('весна');
-//             break;
-//         case 6:
-//         case 7:
-//         case 8:
-//             alert('лето');
-//             break;
-//         case 9:
-//         case 10:
-//         case 11:
-//             alert('осень');
-//             break;
+function gameSeason() {
+    let month = Number(prompt('Введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится'));
+    switch (month) {
+        case 12:
+        case 1:
+        case 2:
+            alert('зима');
+            break;
+        case 3:
+        case 4:
+        case 5:
+            alert('весна');
+            break;
+        case 6:
+        case 7:
+        case 8:
+            alert('лето');
+            break;
+        case 9:
+        case 10:
+        case 11:
+            alert('осень');
+            break;
 
-//         default:
-//             alert('Такого месяца не существует');
-//             break;
-//     }
-// }
+        default:
+            alert('Такого месяца не существует');
+            break;
+    }
+}
 
 //! gameWords
+function gameWords() {
+    let randomFructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+randomFructs = randomFructs.sort(() => Math.random() - 0.5);
+let filter1 = randomFructs[0];
+let filter2 = randomFructs[randomFructs.length - 1];
 
+alert(randomFructs);
+let userAnswer1 = prompt(`Чему равнялся первый элемент массива?`);
+let userAnswer2 = prompt(`Чему равнялся последний элемент массива?`);
+
+for (let i = randomFructs.length - 1; i < randomFructs.length; i++) {
+    if (userAnswer1.toLowerCase() === filter1.toLowerCase() && userAnswer2.toLowerCase()  === filter2.toLowerCase()) {
+        alert(`Вы угадали оба элемента`);
+    } else if (userAnswer1.toLowerCase() === filter1.toLowerCase() || userAnswer2.toLowerCase() === filter2.toLowerCase()) {
+        alert(`Вы были близки к победе!`);
+    }
+    else {
+        alert(`Вы не угадали ни один из элементов :(`);
+    }
+};
+}
 
 // Задание 1
 // let js = 'js';
@@ -46,7 +66,7 @@
 //             }
 //         });
 //         console.log(result);
-// };  
+// };
 
 // searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
 // searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
@@ -95,7 +115,7 @@
 
 // Задание 8
 // let myDate = new Date(1674220924819);
-// console.log(myDate); 
+// console.log(myDate);
 
 // Задание 9
 // const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
@@ -121,25 +141,6 @@
 // " " + months[myDate.getMonth()] +
 // " " + myDate.getFullYear() +
 // " - это " + days[myDate.getDay()] + "." +
-// " Время: " + myDate.getHours() + " : " + myDate.getMinutes() + " : " + myDate.getSeconds(); 
+// " Время: " + myDate.getHours() + " : " + myDate.getMinutes() + " : " + myDate.getSeconds();
 
 // console.log(fullDate)
-
-//? Задание 11
-// let randomFructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-// randomFructs = randomFructs.sort(() => Math.random() - 0.5);
-
-// alert(randomFructs);
-// let userAnswer1 = prompt(`Чему равнялся первый элемент массива?`);
-// let userAnswer2 = prompt(`Чему равнялся последний элемент массива?`);
-
-// for (let i = 0; i < randomFructs.length; i++) {
-//     if (userAnswer1 === randomFructs[0] && userAnswer2 === randomFructs[randomFructs.length - 1]) {
-//         console.log(`Вы угадали оба элемента`);
-//     } else if (userAnswer1 === randomFructs[0] || userAnswer2 === randomFructs[randomFructs.length - 1]) {
-//         console.log(`Вы были близки к победе!`);
-//     }
-//       else {
-//         console.log(`Вы не угадали ни один из элементов :(`);
-//     }
-// }
