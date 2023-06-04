@@ -62,42 +62,42 @@
  
 //  console.log(people.sort((a, b) => a.age - b.age));
 
-//? Задание 2
-function isPositive(number) {
-    return number;
-  }
+// Задание 2
+// function isPositive(number) {
+//     return number;
+//   }
 
-  function isMale(people) {
-    return people;
-  }
+//   function isMale(people) {
+//     return people;
+//   }
   
-  function filter(arr, ruleFunction) {
-    const result = [];
+//   function filter(arr, ruleFunction) {
+//     const result = [];
   
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 1) {
-            result.push(ruleFunction(arr[i]));
-        };
-    }
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > 1) {
+//             result.push(ruleFunction(arr[i]));
+//         };
+//     }
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].gender == 'male') {
-            result.push(ruleFunction(arr[i]));
-        };
-    }
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].gender == 'male') {
+//             result.push(ruleFunction(arr[i]));
+//         };
+//     }
   
-    return result;
-  }
+//     return result;
+//   }
 
-    let people = [
-    {name: 'Глеб', gender: 'male'},
-    {name: 'Анна', gender: 'female'},
-    {name: 'Олег', gender: 'male'},
-    {name: 'Оксана', gender: 'female'}
- ];
+//     let people = [
+//     {name: 'Глеб', gender: 'male'},
+//     {name: 'Анна', gender: 'female'},
+//     {name: 'Олег', gender: 'male'},
+//     {name: 'Оксана', gender: 'female'}
+//  ];
  
-  console.log(filter(people, isMale));
-  console.log(filter([3, -4, 1, 9], isPositive));
+//   console.log(filter(people, isMale));
+//   console.log(filter([3, -4, 1, 9], isPositive));
 
 // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 // Должен выводить [3, 1, 9]
@@ -131,8 +131,8 @@ function isPositive(number) {
 // })
 
 // Задание 5
-// // Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
-// // а затем вызывает переданный колбэк
+// Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
+// а затем вызывает переданный колбэк
 // function delayForSecond(cb) {
 //     setTimeout(() => {
 //         console.log('Прошла одна секунда');
@@ -151,4 +151,3 @@ function isPositive(number) {
 // // Нужно изменить код ниже:
 // // setTimeout(sayHi, 1000 * 2);
 // delayForSecond((setTimeout(sayHi, 1000 * 2)))
-
