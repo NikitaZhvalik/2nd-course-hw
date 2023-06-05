@@ -64,29 +64,23 @@
 
 // Задание 2
 // function isPositive(number) {
-//     return number;
+//     return number > 0;
 //   }
 
-//   function isMale(people) {
-//     return people;
+//   function isMale(person) {
+//     return person.gender === 'male';
 //   }
   
 //   function filter(arr, ruleFunction) {
 //     const result = [];
   
 //     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] > 1) {
-//             result.push(ruleFunction(arr[i]));
+//         if (ruleFunction(arr[i])) {
+//             result.push((arr[i]));
 //         };
 //     }
 
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i].gender == 'male') {
-//             result.push(ruleFunction(arr[i]));
-//         };
-//     }
-  
-//     return result;
+//     return result
 //   }
 
 //     let people = [
@@ -133,21 +127,20 @@
 // Задание 5
 // Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
 // а затем вызывает переданный колбэк
-// function delayForSecond(cb) {
-//     setTimeout(() => {
-//         console.log('Прошла одна секунда');
-// 				if(cb) { 	cb(); }
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+				if(cb) { 	cb(); }
 
-//     }, 1000)
-// }
+    }, 1000)
+}
 
-// // Функция sayHi выводит в консоль приветствие для указанного имени
-// function sayHi (name) {
-//     console.log(`Привет, ${name}!`);
-// }
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi(name) {
+  console.log(`Привет, ${name}!`);
+}
 
-// // Код выше менять нельзя
+// Код выше менять нельзя
 
-// // Нужно изменить код ниже:
-// // setTimeout(sayHi, 1000 * 2);
-// delayForSecond((setTimeout(sayHi, 1000 * 2)))
+// Нужно изменить код ниже:
+delayForSecond(() => sayHi('Глеб'));
