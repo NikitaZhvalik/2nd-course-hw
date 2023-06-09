@@ -1,56 +1,56 @@
 // //! gameSeason
-// function gameSeason() {
-//     let month = Number(prompt('Введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится'));
-//     switch (month) {
-//         case 12:
-//         case 1:
-//         case 2:
-//             alert('зима');
-//             break;
-//         case 3:
-//         case 4:
-//         case 5:
-//             alert('весна');
-//             break;
-//         case 6:
-//         case 7:
-//         case 8:
-//             alert('лето');
-//             break;
-//         case 9:
-//         case 10:
-//         case 11:
-//             alert('осень');
-//             break;
+function gameSeason() {
+    let month = Number(prompt('Введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится'));
+    switch (month) {
+        case 12:
+        case 1:
+        case 2:
+            alert('зима');
+            break;
+        case 3:
+        case 4:
+        case 5:
+            alert('весна');
+            break;
+        case 6:
+        case 7:
+        case 8:
+            alert('лето');
+            break;
+        case 9:
+        case 10:
+        case 11:
+            alert('осень');
+            break;
 
-//         default:
-//             alert('Такого месяца не существует');
-//             break;
-//     }
-// }
+        default:
+            alert('Такого месяца не существует');
+            break;
+    }
+}
 
 // //! gameWords
-// function gameWords() {
-//     let randomFructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-// randomFructs = randomFructs.sort(() => Math.random() - 0.5);
-// let filter1 = randomFructs[0];
-// let filter2 = randomFructs[randomFructs.length - 1];
+function gameWords() {
+    let randomFructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+randomFructs = randomFructs.sort(() => Math.random() - 0.5);
+let filter1 = randomFructs[0];
+let filter2 = randomFructs[randomFructs.length - 1];
 
-// alert(randomFructs);
-// let userAnswer1 = prompt(`Чему равнялся первый элемент массива?`);
-// let userAnswer2 = prompt(`Чему равнялся последний элемент массива?`);
+alert(randomFructs);
+let userAnswer1 = prompt(`Чему равнялся первый элемент массива?`);
+let userAnswer2 = prompt(`Чему равнялся последний элемент массива?`);
 
-// for (let i = randomFructs.length - 1; i < randomFructs.length; i++) {
-//     if (userAnswer1.toLowerCase() === filter1.toLowerCase() && userAnswer2.toLowerCase()  === filter2.toLowerCase()) {
-//         alert(`Вы угадали оба элемента`);
-//     } else if (userAnswer1.toLowerCase() === filter1.toLowerCase() || userAnswer2.toLowerCase() === filter2.toLowerCase()) {
-//         alert(`Вы были близки к победе!`);
-//     }
-//     else {
-//         alert(`Вы не угадали ни один из элементов :(`);
-//     }
-// };
-// }
+for (let i = randomFructs.length - 1; i < randomFructs.length; i++) {
+    if (userAnswer1.toLowerCase() === filter1.toLowerCase() && userAnswer2.toLowerCase()  === filter2.toLowerCase()) {
+        alert(`Вы угадали оба элемента`);
+    } else if (userAnswer1.toLowerCase() === filter1.toLowerCase() || userAnswer2.toLowerCase() === filter2.toLowerCase()) {
+        alert(`Вы были близки к победе!`);
+    }
+    else {
+        alert(`Вы не угадали ни один из элементов :(`);
+    }
+};
+}
 
 // Задание 1
 // const people = [
